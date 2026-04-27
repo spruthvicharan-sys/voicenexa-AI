@@ -255,7 +255,6 @@ export default function LandingPage() {
             <span className="text-sm font-display font-600 text-navy">Voicenexa AI</span>
           </div>
           <p className="text-xs text-slate-400">
-            Built with Whisper · Claude · ElevenLabs · FastAPI · React
           </p>
         </div>
       </footer>
