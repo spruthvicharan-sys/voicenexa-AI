@@ -72,15 +72,7 @@ export default function LandingPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text side */}
             <div className="relative z-10">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-4 py-2 text-sm font-medium text-blue-700 mb-8"
-              >
-                <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-                Powered by Whisper · Claude · ElevenLabs
-              </motion.div>
+              
 
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -159,30 +151,9 @@ export default function LandingPage() {
               </Suspense>
 
               {/* Floating labels around orb */}
-              <motion.div
-                animate={{ y: [-6, 6, -6] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-8 right-4 bg-white rounded-2xl shadow-lg border border-blue-100 px-4 py-2.5 text-sm"
-              >
-                <span className="text-blue-600 font-semibold">Whisper</span>
-                <span className="text-slate-400 ml-1">STT</span>
-              </motion.div>
-              <motion.div
-                animate={{ y: [6, -6, 6] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1.3 }}
-                className="absolute bottom-16 right-0 bg-white rounded-2xl shadow-lg border border-blue-100 px-4 py-2.5 text-sm"
-              >
-                <span className="text-orange-500 font-semibold">Claude</span>
-                <span className="text-slate-400 ml-1">LLM</span>
-              </motion.div>
-              <motion.div
-                animate={{ y: [-4, 8, -4] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.7 }}
-                className="absolute bottom-24 left-2 bg-white rounded-2xl shadow-lg border border-blue-100 px-4 py-2.5 text-sm"
-              >
-                <span className="text-emerald-600 font-semibold">ElevenLabs</span>
-                <span className="text-slate-400 ml-1">TTS</span>
-              </motion.div>
+              
+              
+              
             </motion.div>
           </div>
         </div>
